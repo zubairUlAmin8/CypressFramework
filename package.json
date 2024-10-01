@@ -1,0 +1,34 @@
+{
+  "name": "cyframework",
+  "version": "1.0.0",
+  "description": "A test automation framework template using Cypress + BDD + POM + Reporter + Dashboard",
+  "scripts": {
+    "cy:dev:chrome": "cypress run --config baseUrl=http://devtodo.monfared.io/ --browser chrome --record",
+    "cy:stag:chrome": "cypress run --config baseUrl=http://stagtodo.monfared.io/ --browser chrome --record",
+    "cy:dev:firefox": "cypress run --config baseUrl=http://devtodo.monfared.io/ --browser firefox --record",
+    "cy:stag:firefox": "cypress run --config baseUrl=http://stagtodo.monfared.io/ --browser firefox --record",
+    "cy:headed": "cypress run --config baseUrl=http://devtodo.monfared.io/ --headed",
+    "cy:test": "cypress run --config baseUrl=http://devtodo.monfared.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zubairUlAmin8/CypressFramework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zubairUlAmin8/CypressFramework/issues"
+  },
+  "homepage": "https://github.com/zubairUlAmin8/CypressFramework#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.15.0",
+    "cypress-mochawesome-reporter": "^3.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": false
+  }
+}
